@@ -28,5 +28,5 @@ if __name__ == "__main__":
     for row in query_rows:
         print(row)
 
-        cursor.close()
-        db.close()
+    cursor.close()
+    db.close()
