@@ -2,12 +2,11 @@ from flask import Flask, render_template
 import json
 import os
 
-app = Flask(__name__)
-app.template_folder = os.path.join(os.path.dirname(__file__), 'templates')
+app = Flask(__name__, template_folder=os.path.join(os.path.dirname(os.path.abspath(__file__)), 'templates'))
 
 @app.route('/items')
 def items():
-    json_path = os.path.join(os.path.dirname(__file__), 'items.json')
+    json_path = os.path.join(os.path.dirname(os.path.abspath(__file__)), 'items.json')
     with open(json_path, 'r') as f:
         data = json.load(f)
     items_list = data.get('items', [])
