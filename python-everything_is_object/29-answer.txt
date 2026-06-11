@@ -1,0 +1,2 @@
+Blog post: https://medium.com/p/8ca7872a7931
+LinkedIn post: https://www.linkedin.com/pulse/understanding-pythons-object-model-mutability-memory-aysel-bayramova-4hgpf
