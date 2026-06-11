@@ -3,6 +3,7 @@ import json
 import os
 
 app = Flask(__name__)
+app.template_folder = os.path.join(os.path.dirname(__file__), 'templates')
 
 @app.route('/items')
 def items():
